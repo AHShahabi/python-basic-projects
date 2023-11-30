@@ -29,7 +29,7 @@ def Hangman():
         else:    
             wrong_letters.append (user_guess_letter)
             turns -= 1
-    if '_' in current_word: print (f"YOU LOSE{chr (161)}")
+    if '_' in current_word: print (f"YOU DIED{chr (161)}")
     else: print ("YOU WIN!")
     print (f"The word is: {word}")
     
