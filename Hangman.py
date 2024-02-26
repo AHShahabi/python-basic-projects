@@ -24,7 +24,7 @@ def Hangman():
     while turns > 0:
         current_word = [char if char in right_letters else '_' for char in word_letters]
         print("Current_word: ", ' '.join (current_word))
-        print("Letters that not involve:", ' '.join(wrong_letters), f"your lives left: {turns}")
+        print("Letters that not involve:", ' '.join(wrong_letters), f"\nyour lives left: {turns}")
         user_guess_letter = input("Guess a letter: ").upper()
         if user_guess_letter in word_letters:
             right_letters.append(user_guess_letter)
